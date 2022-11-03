@@ -114,14 +114,14 @@ const levels = [
     ],
 
     objective:
-      "Esse gato... Escreva e execute uma função que retorne um texto com duas palavras ou mais.",
+      "Esse gato... Escreva e execute uma função que retorne a frase 'era uma vez'",
 
-    initialCode: "'era uma vez um gato miaw...'",
+    initialCode: "'era uma vez'",
 
     goalCondition: (inputCode, codeReturn) => {
       const cond1 =
         inputCode.includes("function") && inputCode.includes("return");
-      const cond2 = codeReturn?.split(" ")?.length >= 2;
+      const cond2 = codeReturn.includes("era uma vez");
 
       return cond1 && cond2;
     },
