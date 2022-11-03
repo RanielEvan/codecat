@@ -205,13 +205,32 @@ const levels = [
       "Ele conseguiu fazer algo extraordinário pra ela",
       "Uma prova de amor",
       "[...]",
-      "Se quiser saber uma coisa, execute <b>miaw.contarHistorias(true)</b>",
-      "E pra finalizar, execute <b>finalizar()</b>",
+      "Se quiser saber uma coisa, execute <b>miaw.contarHistoria(true)</b>",
     ],
 
-    objective: "Esse gato realmente gosta de vc",
+    objective: "Esse gato tem cada coisa...",
 
     initialCode: "miaw",
+
+    goalCondition: (inputCode, codeReturn) => {
+      const cond1 = inputCode.includes("miaw.contarHistoria(true)");
+      return cond1;
+    },
+  },
+
+  {
+    level: 10,
+    miawTexts: [
+      "Isso é vdd &#128150;",
+      "Bom... Obrigado!",
+      "Fiz isso por você e para você",
+      "E isso ficou incrível!!",
+      "Execute <b>finalizar()</b>",
+    ],
+
+    objective: "É, esse gato realmente gosta de vc. Vou ficar até calado..",
+
+    initialCode: "",
 
     goalCondition: (inputCode, codeReturn) => {
       const cond1 = inputCode.includes("finalizar()");
