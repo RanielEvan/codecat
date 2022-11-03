@@ -14,7 +14,6 @@
     "heroku-postbuild": "yarn && yarn build"
   },
   "dependencies": {
-    "@quasar/app": "^3.0.0",
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
     "connect-history-api-fallback": "^2.0.0",
@@ -26,14 +25,15 @@
     "vue": "^3.0.0",
     "vue-router": "^4.0.0",
     "vuex": "^4.0.1",
-    "vuex-persistedstate": "^4.1.0"
+    "vuex-persistedstate": "^4.1.0",
+    "@quasar/app": "^3.0.0",
+    "eslint-webpack-plugin": "^2.4.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
-    "eslint-webpack-plugin": "^2.4.0",
     "prettier": "^2.5.1"
   },
   "browserslist": [
@@ -50,6 +50,6 @@
   "engines": {
     "node": ">= 12.22.1",
     "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "yarn": ">= 1.21.1",
   }
 }
